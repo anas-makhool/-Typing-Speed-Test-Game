@@ -4,9 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Typing Speed Test Game | CodingNepal</title>
+    <title>Typing Speed Test Game</title>
+    <script src="js/paragraphs.js" defer></script>
+    <script src="js/main.js" defer></script>
   </head>
   <body>
+    <ul class="times">
+      <p style="font-size: 30px">⏱</p>
+      <li>15</li>
+      <li>30</li>
+      <li>60</li>
+      <li>120</li>
+    </ul>
+
+    <div class="popup">
+      <p class="text">🔒 Caps Lock!</p>
+    </div>
+
     <div class="wrapper">
       <input type="text" class="input-field" />
       <div class="content-box">
@@ -17,7 +31,7 @@
           <ul class="result-details">
             <li class="time">
               <p>Time Left:</p>
-              <span><b>60</b>s</span>
+              <span><b>15</b>s</span>
             </li>
             <li class="mistake">
               <p>Mistake</p>
@@ -36,8 +50,5 @@
         </div>
       </div>
     </div>
-
-    <script src="js/paragraphs.js"></script>
-    <script src="js/main.js"></script>
   </body>
 </html>
