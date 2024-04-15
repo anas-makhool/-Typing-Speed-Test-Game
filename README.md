@@ -1,5 +1,5 @@
 # Typing Speed Test Game 
-
+This project is a Typing Speed Test Game developed using HTML, CSS, and JavaScript. It allows users to test their typing speed by typing the displayed paragraph within a specified time limit.
 
 ## Features
 - Users can select different time limits (15s, 30s, 60s, or 120s) for the typing test.
