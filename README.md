@@ -31,3 +31,5 @@ This project was created by [anas-makhool](https://github.com/anas-makhool).
 ## License
 
 This project is licensed under the [MIT Liscense](LICENSE). Feel free to modify and distribute it for personal or commercial purposes.
+
+## You can browse it from - [here](https://typing-speed-test-game-106299.netlify.app/)
