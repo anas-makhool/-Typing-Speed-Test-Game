@@ -26,11 +26,17 @@ let timeLeft = maxTime;
 let charIndex = inputField.value.length;
 let mistakeCount = 0;
 let isTyping = false;
+let shuffledArray = paragraphs
+  .slice()
+  .sort(() => Math.random() - 0.5)
+  .join(" ");
+
 
 function randomParagraph() {
-  let randIndex = Math.floor(Math.random() * paragraphs.length);
+
+  let randIndex = Math.floor(Math.random() * shuffledArray.length);
   typingText.innerHTML = "";
-  paragraphs[randIndex].split("").forEach((span) => {
+  shuffledArray.split("").forEach((span) => {
     let spanTag = document.createElement("span");
     spanTag.appendChild(document.createTextNode(span));
     typingText.appendChild(spanTag);
@@ -131,10 +137,8 @@ document.addEventListener("keydown", (e) => {
   localStorage.setItem("capsLockOn", capsLockOn);
 
   if (!capsLockOn) {
-    console.log(`on`);
     popup.classList.remove("scale-1");
   } else {
-    console.log(`of`);
     popup.classList.add("scale-1");
   }
 });
@@ -142,10 +146,8 @@ document.addEventListener("keydown", (e) => {
 window.onload = () => {
   var capsLockStored = localStorage.getItem("capsLockOn") === "true";
   if (!capsLockStored) {
-    console.log(`on`);
     popup.classList.remove("scale-1");
   } else {
-    console.log(`of`);
     popup.classList.add("scale-1");
   }
 };
